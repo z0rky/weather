@@ -7,6 +7,7 @@ const messageTwo = document.querySelector('#message_two')
 locationForm.addEventListener('submit', event => {
     event.preventDefault()
     const location = search.value
+    console.log(location)
     weather(location)
     
 })
