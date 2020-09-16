@@ -10,7 +10,7 @@ const weatherRequest = ({longitude, latitude, location} = {}, callback) => {
         callback('unable to find location, error', undefined)
     }else{
         callback(undefined, {
-            foreCast:`It is currently ${body.current.temperature}, It feels like ${body.current.feelslike}, weather is ${body.current.weather_descriptions[0]} `,
+            foreCast:`It is currently ${body.current.temperature}, It feels like ${body.current.feelslike}, weather is ${body.current.weather_descriptions[0]} and UV index is ${body.current.uv_index} `,
             location: location
     });
     }
